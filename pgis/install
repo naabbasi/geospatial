@@ -1,0 +1,8 @@
+#/bin/sh
+python -m pip install --upgrade pip
+python -m pip install matplotlib
+python -m pip install geopandas
+python -m pip install PythonTurtle
+#python -m pip install speechrecognition
+#sudo apt-get install python3-pyaudio
+#python -m pip install pyttsx3

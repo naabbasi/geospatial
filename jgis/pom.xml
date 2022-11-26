@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.4</version>
+		<version>3.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qterminals</groupId>
@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>17</java.version>
+		<java.version>19</java.version>
 		<geotools.version>28-SNAPSHOT</geotools.version>
 	</properties>
 
@@ -29,6 +29,11 @@
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<dependency>
@@ -49,6 +54,12 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-spatial</artifactId>
+			<version>6.1.5.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 		</dependency>
 
 		<dependency>
